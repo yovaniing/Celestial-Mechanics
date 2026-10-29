@@ -2,6 +2,8 @@
 #include <iostream>
 #include <math.h>
 
+// LEO interception simulation
+
 using namespace std;
 
 double r, s, a, ba, mu;
@@ -22,6 +24,8 @@ int main(int argc, char *argv[])
     double id[9][9];
     double c[9];
     double prod[9];
+
+    // Initial conditions
     
     r0[0]=1;
     r0[1]=2;
@@ -42,6 +46,8 @@ int main(int argc, char *argv[])
     a=1;
     ba=2;
     mu=1;
+
+// Solution method
     
     v[0]=1;
     v[1]=1;
@@ -240,6 +246,8 @@ int main(int argc, char *argv[])
     }
     
 }
+
+// Results
 
 for(i=0; i<9; i++){
    cout<<v[i]<<endl;
